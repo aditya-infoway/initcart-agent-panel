@@ -102,7 +102,7 @@ const TreeNodeComponent: React.FC<{ node: TreeNode; isRoot?: boolean }> = ({ nod
                 <h3 className="font-bold text-gray-900 truncate text-sm leading-tight">
                   {displayName}
                 </h3>
-                {/* ✅ Show contact info — NOT raw username if it's a phone number */}
+                {/*  Show contact info — NOT raw username if it's a phone number */}
                 <p className="text-xs text-gray-500 truncate">{contactInfo}</p>
               </div>
             </div>

@@ -38,7 +38,6 @@ const AppRouter = () => (
         {/* Add more protected routes */}
       </Route>
 
-      {/* <Route path="*" element={<NotFound />} /> <==== ADD LATER */}
     </Routes>
   </BrowserRouter>
 );
