@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "https://api.initcart.in"; // Change this to your backend URL
+const BASE_URL = "http://localhost:8000"; // Change this to your backend URL
 
 // Public axios instance (no auth required)
 export const publicAxios = axios.create({

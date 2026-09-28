@@ -81,7 +81,7 @@ const Login = () => {
   });
 
   const handleAgentRegistration = () => {
-    window.open("https://initcart.in/becomeAgent", "_blank");
+    window.open("https://initcart.com/becomeAgent", "_blank");
   };
 
   return (

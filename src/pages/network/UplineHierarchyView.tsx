@@ -731,7 +731,7 @@ const UplineHierarchy: React.FC = () => {
     } catch (err: any) {
       console.error('Error fetching upline tree:', err);
       setError(
-        err.response?.data?.detail ||
+        err.response?.data?.detail || 
         err.response?.data?.message ||
         'Failed to fetch upline hierarchy',
       );

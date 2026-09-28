@@ -68,14 +68,14 @@ const getFullUrl = (mediaPath: string | undefined | null): string => {
   }
   
   if (mediaPath.startsWith('/media/')) {
-    return `https://api.initcart.in${mediaPath}`;
+    return `http://localhost:8000${mediaPath}`;
   }
   
   if (!mediaPath.includes('/')) {
-    return `https://api.initcart.in/media/${mediaPath}`;
+    return `http://localhost:8000/media/${mediaPath}`;
   }
   
-  return `https://api.initcart.in${mediaPath.startsWith('/') ? '' : '/'}${mediaPath}`;
+  return `http://localhost:8000${mediaPath.startsWith('/') ? '' : '/'}${mediaPath}`;
 };
 
 const Profile = () => {
@@ -122,10 +122,10 @@ const Profile = () => {
       const agentReferralCode = authUser?.referral_code || apiData.user?.referral_code || "N/A";
       
       // Sale ke liye link (homepage)
-      setSaleLink(`https://initcart.in/?ref=${agentReferralCode}`);
+      setSaleLink(`https://initcart.com/?ref=${agentReferralCode}`);
       
       // Agent registration ke liye link
-      setAgentLink(`https://initcart.in/becomeAgent?ref=${agentReferralCode}`);
+      setAgentLink(`https://initcart.com/becomeAgent?ref=${agentReferralCode}`);
       
       //  Set eligibility flags
       setCanReferAgents(apiData.can_refer_agents || false);
