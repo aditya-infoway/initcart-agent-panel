@@ -118,7 +118,7 @@ const SalesReportPage: React.FC = () => {
     return (
       <div className="bg-gradient-to-b from-gray-50 to-gray-100 p-6 rounded-2xl shadow-md">
         <div className="bg-red-50 border border-red-200 rounded-lg p-6 text-center">
-          <p className="text-red-600 mb-4">⚠️ {error}</p>
+          <p className="text-red-600 mb-4"> {error}</p>
           <button
             onClick={fetchSalesData}
             className="px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors text-sm"
