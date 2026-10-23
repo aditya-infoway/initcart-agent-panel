@@ -1,4 +1,4 @@
-// src/pages/SalesReportPage.tsx
+// src/pages/SalesReportPage.tsx(sales)
 import React, { useState, useEffect } from "react";
 import { privateAxios } from "../../api/axios";
 import DataTable from "../../components/common/DataTable";
@@ -28,6 +28,7 @@ interface SalesData {
   computed_running_total: number;
   delivered_sales: number;
   refunded_total: number;
+
   total_orders: number;
   minimum_required: number;
   remaining_for_activation: number;
